@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://card-game-8284d-default-rtdb.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">523888645870</string>
+  <string name="google_storage_bucket" translatable="false">card-game-8284d.appspot.com</string>
+  <string name="project_id" translatable="false">card-game-8284d</string>
+  <string name="google_api_key" translatable="false">AIzaSyCVMTHWqPVpMjMO7rJCqTscMqBzTYg3LqU</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCVMTHWqPVpMjMO7rJCqTscMqBzTYg3LqU</string>
+  <string name="google_app_id" translatable="false">1:523888645870:android:ef687f2169c7a9022fc5ff</string>
+  <string name="default_web_client_id" translatable="false">523888645870-4oldkb8m8amj36k3bc6j8ab40clothk4.apps.googleusercontent.com</string>
+</resources>
