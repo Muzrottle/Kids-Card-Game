@@ -19,7 +19,7 @@ Firebase Authentication ile email ve şifre kullanılarak giriş yapılır. Üye
 
 <br><br>
 
-Raycast kullanarak tıklanılan kartlar collider ile yakalanıp bu kartın önce script'i üzerinden tıklanma bilgisi True olarak ayarlanıyor. Daha sonra bu kartın isim bilgisi üzerinden bulunarak bu gameobject tutuluyor. Tıklama sayısı 2 olduktan sonra deste tıklanılamaz olarak değiştiriliyor. Ardından tıklanılan kartların tag'leri kontrol edildiğinde eğer taglar uyuşuyorsa kartlar destroy edilir. Eğer uyuşmuyorlarsa kartların tıklanma bilgisi False olur, kartlar tekrar kapanır, deste tıklanılabilir olur ve tıklanma sayısı tekrar 0'a döner.
+Öncelikle kartlar oyun başlangıcında açık olarak başlar ve 3 saniyenin ardından kapanır. Her oyun başlangıcında kart konumları rastgele olarak ayarlanır. Raycast kullanarak tıklanılan kartlar collider ile yakalanıp bu kartın önce script'i üzerinden tıklanma bilgisi True olarak ayarlanıyor. Daha sonra bu kartın isim bilgisi üzerinden bulunarak bu gameobject tutuluyor. Tıklama sayısı 2 olduktan sonra deste tıklanılamaz olarak değiştiriliyor. Ardından tıklanılan kartların tag'leri kontrol edildiğinde eğer taglar uyuşuyorsa önce o hayvanın sesi oynatılır ardından kartlar destroy edilir. Eğer uyuşmuyorlarsa önce bir hata sesi oynatılır ardından kartların tıklanma bilgisi False olur, kartlar tekrar kapanır, deste tıklanılabilir olur ve tıklanma sayısı tekrar 0'a döner.
 
 <br>
 
@@ -32,3 +32,19 @@ Raycast kullanarak tıklanılan kartlar collider ile yakalanıp bu kartın önce
   <img src="https://user-images.githubusercontent.com/57044969/211088391-2cd0b7de-4769-4266-9122-26c401e044d8.png"  width="230" />
   
 </p>
+
+<br><br>
+
+Oyun sonundaki skor, yapılan hata sayısı ve geçen süreyle belirlenir. Oyun 3000 skor ile başlar. Her geçen saniye skorden 5 puan ve her yapılan hata ise skordan 10 puan eksiltmektedir. Oyun tamamlandıktan sonra yapılan skor firebase realtime database'e gönderilir ve kaydedilir. Database'te Kullanıcılar ve Skorlar olarak 2 tablo bulunmaktadır. Skorlar skor tablosunda kullanıcının unique id'sine bağlı şekilde tutulur. Oyunun en son kısmında iste skor tablosu büyükten küçüğe sıralanır.
+
+<br>
+
+<p float="left">
+
+  <img src="https://user-images.githubusercontent.com/57044969/211101809-8eda196f-0b05-4bb6-af93-1846a474872c.png"  width="230" />
+ 
+  <img src="https://user-images.githubusercontent.com/57044969/211101952-a12d17bf-fbca-47f8-8885-3b156bd9a66b.png"  width="230" />
+  
+</p>
+
+
